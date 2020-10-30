@@ -1,6 +1,9 @@
 <?php
+define("TBUSUARIO", "usuario");
+
 require("db.php");
-banco("");
-echo "ok";
+$sql = "DROP TABLE IF EXISTS " . TBUSUARIO;
+banco($sql);
+echo "<p>DB: Tabela " . TBUSUARIO . " apagada.</p>";
 
 ?>
